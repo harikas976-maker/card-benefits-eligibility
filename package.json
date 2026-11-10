@@ -1,0 +1,24 @@
+{
+  "name": "card-benefits-eligibility",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/main.js",
+    "test": "npm run build && node --test dist/test/api.test.js dist/test/policy.test.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters && node --check scripts/load.mjs"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "fastify": "^5.12.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
